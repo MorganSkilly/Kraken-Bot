@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kraken_Bot
 {
-    public partial class Main : Form
+    public partial class ControllerForm : Form
     {
-        public Main()
+        public ControllerForm()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Kraken_Bot
 {
-    partial class Main
+    partial class ControllerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(239, 128);
+            this.ClientSize = new System.Drawing.Size(260, 199);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Main";
             this.ShowIcon = false;
