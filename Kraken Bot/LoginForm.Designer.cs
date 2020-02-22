@@ -30,18 +30,19 @@
         {
             this.SuspendLayout();
             // 
-            // Main
+            // ControllerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(260, 199);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Main";
+            this.Name = "ControllerForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kraken Bot - BETA";
+            this.Load += new System.EventHandler(this.ControllerForm_Load);
             this.ResumeLayout(false);
 
         }

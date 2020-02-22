@@ -16,5 +16,10 @@ namespace Kraken_Bot
         {
             InitializeComponent();
         }
+
+        private void ControllerForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
