@@ -79,6 +79,8 @@
     <Compile Include="RandomName.cs" />
     <EmbeddedResource Include="EmailTest.resx">
       <DependentUpon>EmailTest.cs</DependentUpon>
+    <EmbeddedResource Include="AuthenticateForm.resx">
+      <DependentUpon>AuthenticateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
