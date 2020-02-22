@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kraken Bot", "Kraken Bot\Kraken Bot.csproj", "{285F365E-1361-4527-B6F6-0FB0A5A5DAB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{285F365E-1361-4527-B6F6-0FB0A5A5DAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285F365E-1361-4527-B6F6-0FB0A5A5DAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285F365E-1361-4527-B6F6-0FB0A5A5DAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285F365E-1361-4527-B6F6-0FB0A5A5DAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA5EA9BF-58C5-4EDD-921C-9E99DE41FD9D}
+	EndGlobalSection
+EndGlobal
