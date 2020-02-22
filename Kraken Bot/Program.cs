@@ -16,7 +16,7 @@ namespace Kraken_Bot
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ControllerForm());
+            Application.Run(new LoginForm());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Kraken_Bot
 {
-    partial class ControllerForm
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
