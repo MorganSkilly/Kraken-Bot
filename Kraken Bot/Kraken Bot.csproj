@@ -53,11 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthenticateForm.cs">
+    <Compile Include="KrakenLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AuthenticateForm.Designer.cs">
-      <DependentUpon>AuthenticateForm.cs</DependentUpon>
+    <Compile Include="KrakenLogin.Designer.cs">
+      <DependentUpon>KrakenLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Email.cs" />
     <Compile Include="EmailTest.cs">
@@ -78,8 +78,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomName.cs" />
     <Compile Include="DiscordBot.cs" />
-    <EmbeddedResource Include="AuthenticateForm.resx">
-      <DependentUpon>AuthenticateForm.cs</DependentUpon>
+    <EmbeddedResource Include="KrakenLogin.resx">
+      <DependentUpon>KrakenLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmailTest.resx">
       <DependentUpon>EmailTest.cs</DependentUpon>

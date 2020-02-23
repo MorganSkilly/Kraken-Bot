@@ -19,9 +19,16 @@ namespace Kraken_Bot
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            //This is the login button, literally the only thing on this form that matters
+            //Submit login to the server
 
-            Close();
+            //get Response
+
+            //Validate
+
+            //If the login is a registered account then close()
+            //else display error message
+
+            Application.Exit();
         }
     }
 }

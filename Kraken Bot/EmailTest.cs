@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Collections.Specialized;
 using RandomNameGen;
+using System.IO;
 
 namespace Kraken_Bot
 {
@@ -14,6 +15,20 @@ namespace Kraken_Bot
         public EmailTest()
         {
             InitializeComponent();
+
+
+            NameValueCollection sAll;
+            sAll = ConfigurationManager.AppSettings;
+
+            foreach (string s in sAll.AllKeys)
+                Console.WriteLine(s + ": " + sAll.Get(s));
+
+            phpscripttext.Text = ConfigurationManager.AppSettings.Get("PHPScript");
+            delaytext.Text = ConfigurationManager.AppSettings.Get("Delay");
+            counttext.Text = ConfigurationManager.AppSettings.Get("Count");
+            sendtotext.Text = ConfigurationManager.AppSettings.Get("SendEmail");
+            bodytexttext.Text = File.ReadAllText("body.txt");
+            profilestext.Text = File.ReadAllText("profiles.json");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,12 +51,16 @@ namespace Kraken_Bot
                 Console.WriteLine(s + ": " + sAll.Get(s));
 
             String domainName = ConfigurationManager.AppSettings.Get("DomainName");
-            String phpscript = ConfigurationManager.AppSettings.Get("PHPScript");
-            int delay = int.Parse(ConfigurationManager.AppSettings.Get("Delay"));
-            int count = int.Parse(ConfigurationManager.AppSettings.Get("Count"));
+            String phpscript = phpscripttext.Text;
+            int delay = int.Parse(delaytext.Text);
+            int count = int.Parse(counttext.Text);
+            //String phpscript = ConfigurationManager.AppSettings.Get("PHPScript");
+            //int delay = int.Parse(ConfigurationManager.AppSettings.Get("Delay"));
+            //int count = int.Parse(ConfigurationManager.AppSettings.Get("Count"));
             String logEmail = ConfigurationManager.AppSettings.Get("LogEmail");
             String logDiscord = ConfigurationManager.AppSettings.Get("DiscordWebhook");
-            String sendEmail = ConfigurationManager.AppSettings.Get("SendEmail");
+            //String sendEmail = ConfigurationManager.AppSettings.Get("SendEmail");
+            String sendEmail = sendtotext.Text;
             IList<string> addresses = profiles.GetAddresses();
             IList<string> emails = profiles.GetEmails();
             IList<string> instagrams = profiles.GetInstagrams();
@@ -50,7 +69,7 @@ namespace Kraken_Bot
             Console.WriteLine("-----------------------------------");
             Console.WriteLine();
 
-            string bodyText = "##NAME##\n\nneed shipping\n\n##ADDRESS##\n\n##PHONE##\n\nUK size ##SIZE##";
+            string bodyText = bodytexttext.Text;
             string nameText = "Morgan";
             string addressText;
             string sizeText;
@@ -145,5 +164,9 @@ namespace Kraken_Bot
                 emptyfield);
         }
 
+        private void phpscript_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
