@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kraken_Bot
 {
-    public partial class AuthenticateForm : Form
+    public partial class KrakenLogin : Form
     {
-        public AuthenticateForm()
+        public KrakenLogin()
         {
             InitializeComponent();
         }
@@ -20,8 +20,8 @@ namespace Kraken_Bot
         private void LoginButton_Click(object sender, EventArgs e)
         {
             //This is the login button, literally the only thing on this form that matters
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
+
+            Close();
         }
     }
 }
