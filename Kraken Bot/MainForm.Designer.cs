@@ -29,23 +29,107 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.Title = new System.Windows.Forms.PictureBox();
+            this.VersionLabel = new System.Windows.Forms.Label();
+            this.ServerStatusLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ServerStatus = new System.Windows.Forms.Label();
+            this.DomainStatus = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Title)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Title
+            // 
+            this.Title.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Title.Image = ((System.Drawing.Image)(resources.GetObject("Title.Image")));
+            this.Title.Location = new System.Drawing.Point(660, 30);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(600, 80);
+            this.Title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Title.TabIndex = 0;
+            this.Title.TabStop = false;
+            // 
+            // VersionLabel
+            // 
+            this.VersionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VersionLabel.ForeColor = System.Drawing.Color.Gray;
+            this.VersionLabel.Location = new System.Drawing.Point(0, 0);
+            this.VersionLabel.Name = "VersionLabel";
+            this.VersionLabel.Size = new System.Drawing.Size(70, 20);
+            this.VersionLabel.TabIndex = 1;
+            this.VersionLabel.Text = "V - 0.1.0";
+            // 
+            // ServerStatusLabel
+            // 
+            this.ServerStatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServerStatusLabel.ForeColor = System.Drawing.Color.Gray;
+            this.ServerStatusLabel.Location = new System.Drawing.Point(0, 30);
+            this.ServerStatusLabel.Name = "ServerStatusLabel";
+            this.ServerStatusLabel.Size = new System.Drawing.Size(170, 30);
+            this.ServerStatusLabel.TabIndex = 2;
+            this.ServerStatusLabel.Text = "Server Status:";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(0, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 30);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Domain Status:";
+            // 
+            // ServerStatus
+            // 
+            this.ServerStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServerStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ServerStatus.Location = new System.Drawing.Point(176, 30);
+            this.ServerStatus.Name = "ServerStatus";
+            this.ServerStatus.Size = new System.Drawing.Size(160, 30);
+            this.ServerStatus.TabIndex = 4;
+            this.ServerStatus.Text = "Connected";
+            // 
+            // DomainStatus
+            // 
+            this.DomainStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DomainStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.DomainStatus.Location = new System.Drawing.Point(176, 60);
+            this.DomainStatus.Name = "DomainStatus";
+            this.DomainStatus.Size = new System.Drawing.Size(160, 30);
+            this.DomainStatus.TabIndex = 5;
+            this.DomainStatus.Text = "Disconnected";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.DomainStatus);
+            this.Controls.Add(this.ServerStatus);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ServerStatusLabel);
+            this.Controls.Add(this.VersionLabel);
+            this.Controls.Add(this.Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kraken Bot - BETA";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.Title)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox Title;
+        private System.Windows.Forms.Label VersionLabel;
+        private System.Windows.Forms.Label ServerStatusLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ServerStatus;
+        private System.Windows.Forms.Label DomainStatus;
     }
 }
 
