@@ -21,5 +21,10 @@ namespace Kraken_Bot
         {
 
         }
+
+        private void Title_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
