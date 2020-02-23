@@ -7,7 +7,8 @@ namespace Kraken_Bot
 {
     class Email
     {
-        private string url, source, to, from, subject, body, logger;
+        private string url, source, to, from, subject, body, discordemailwebhook;
+        private DiscordBot emailrecipt = new DiscordBot("https://discordapp.com/api/webhooks/680979941990465549/zJTyiSxLIjnaJ4NSWXqraRZvqxFTv7ct1KILefLU3bFkkl-zTVQrjmiweLbjIo__Z5Ds", "email recipt bot", "http://morgan.games/kraken/krakenbeta.png");
 
         public Email(
             string url,
@@ -16,7 +17,7 @@ namespace Kraken_Bot
             string from,
             string subject,
             string body,
-            string logger)
+            string discordemailwebhook)
         {
             this.url = url;
             this.source = source;
@@ -24,7 +25,7 @@ namespace Kraken_Bot
             this.from = from;
             this.subject = subject;
             this.body = body;
-            this.logger = logger;
+            this.discordemailwebhook = discordemailwebhook;
         }
 
         public String Send()
@@ -37,13 +38,13 @@ namespace Kraken_Bot
                 data["from"] = from;
                 data["subject"] = subject;
                 data["body"] = body;
-                data["logger"] = logger;
+                data["webhook"] = discordemailwebhook;
 
                 var response = wb.UploadValues(url, "POST", data);
-                string responseInString = Encoding.UTF8.GetString(response);
+                string responseInString = Encoding.UTF8.GetString(response);              
 
                 return responseInString;
-            }
+            }            
         }
     }
 }

@@ -56,6 +56,7 @@ namespace Kraken_Bot
             string sizeText;
             string instagramText = "@morganskilly";
             string phoneText;
+            string discordEmailWebhook = "https://discordapp.com/api/webhooks/680979941990465549/zJTyiSxLIjnaJ4NSWXqraRZvqxFTv7ct1KILefLU3bFkkl-zTVQrjmiweLbjIo__Z5Ds";
 
             MarkDownText text = new MarkDownText();
 
@@ -109,7 +110,8 @@ namespace Kraken_Bot
                         sizeText,
                         instagramText,
                         phoneText),
-                    logEmail);
+
+                    discordEmailWebhook);
 
                 string output = email.Send();
                 Console.WriteLine("event triggered at: " + DateTime.Now.ToString());
@@ -118,5 +120,30 @@ namespace Kraken_Bot
                 System.Threading.Thread.Sleep(delay * 1000);
             }
         }
+
+        private void EmailTest_Load(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DiscordBot testbot = new DiscordBot(
+                "https://discordapp.com/api/webhooks/680980116632895587/56WU6lGCjn4fuYywh3C4B3uSD0gNE2amgdWneiUIIffuseUNwMj3hQ9TqQBjsE_g-7rg",
+                "Mr.Test Bot",
+                "http://morgan.games/kraken/krakenbeta.png");
+
+            DiscordEmbedField emptyfield = new DiscordEmbedField("field name", "field value [link](http://morgan.games)");
+
+            testbot.SendDiscordWebHookEmbeded(
+                "https://media3.giphy.com/media/GRF4gJYMQmdUI/giphy.gif?cid=790b76118b48fa14c668987a44f9f81552fe2621fe52ac59&rid=giphy.gif",
+                "This is a test",
+                "http://morgan.games",
+                emptyfield,
+                emptyfield,
+                emptyfield,
+                emptyfield);
+        }
+
     }
 }
