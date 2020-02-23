@@ -120,7 +120,7 @@
             // 
             this.VersionLabel.AutoSize = true;
             this.VersionLabel.ForeColor = System.Drawing.Color.Gray;
-            this.VersionLabel.Location = new System.Drawing.Point(0, 9);
+            this.VersionLabel.Location = new System.Drawing.Point(0, 0);
             this.VersionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.VersionLabel.Name = "VersionLabel";
             this.VersionLabel.Size = new System.Drawing.Size(47, 13);
