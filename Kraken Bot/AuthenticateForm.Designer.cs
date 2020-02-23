@@ -71,7 +71,6 @@
             this.Title.TabIndex = 3;
             this.Title.Text = "Kraken";
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Title.Click += new System.EventHandler(this.Title_Click);
             // 
             // PassWordTextBox
             // 
@@ -95,7 +94,6 @@
             this.UserNameLabel.TabIndex = 5;
             this.UserNameLabel.Text = "UserName";
             this.UserNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.UserNameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // PassWordLabel
             // 
@@ -117,6 +115,7 @@
             this.LoginButton.TabIndex = 7;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // AuthenticateForm
             // 

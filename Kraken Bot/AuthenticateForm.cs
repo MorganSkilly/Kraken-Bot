@@ -17,14 +17,11 @@ namespace Kraken_Bot
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Title_Click(object sender, EventArgs e)
-        {
-
+            //This is the login button, literally the only thing on this form that matters
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
         }
     }
 }
