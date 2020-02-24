@@ -28,7 +28,8 @@ namespace Kraken_Bot
             //If the login is a registered account then close()
             //else display error message
 
-            Application.Exit();
+            //Application.Exit();
+            Close();
         }
     }
 }

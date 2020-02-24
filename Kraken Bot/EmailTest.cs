@@ -121,7 +121,7 @@ namespace Kraken_Bot
                     nameof(Kraken_Bot) + " Version: " + version,
                     sendEmail,
                     nameNoSpaces + "@" + domainName,
-                    "350 TAIL LIGHT UK" + sizeText,
+                    "TRAVIS",
                     text.MarkDownOutput(bodyText,
                         nameNoSpaces + "@" + domainName,
                         addressText,
