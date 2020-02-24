@@ -8,7 +8,7 @@ namespace Kraken_Bot
     public class Profile
     {
         public IList<string> addresses { get; set; }
-        public IList<string> emails { get; set; }
+        public IList<string> bodytext { get; set; }
         public IList<string> instagram { get; set; }
     }
 
@@ -50,11 +50,11 @@ namespace Kraken_Bot
             }
         }
 
-        public IList<string> GetEmails()
+        public IList<string> GetBodyText()
         {
             try
             {
-                return profile.emails;
+                return profile.bodytext;
             }
             catch
             {

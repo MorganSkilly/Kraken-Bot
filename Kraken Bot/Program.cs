@@ -18,8 +18,7 @@ namespace Kraken_Bot
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new KrakenLogin());
             Application.Run(new MainForm());
-            Console.ReadKey();
-            //Application.Run(new EmailTest());
+            Application.Run(new EmailTest());
         }
     }
 }

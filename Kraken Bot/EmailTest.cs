@@ -62,7 +62,7 @@ namespace Kraken_Bot
             //String sendEmail = ConfigurationManager.AppSettings.Get("SendEmail");
             String sendEmail = sendtotext.Text;
             IList<string> addresses = profiles.GetAddresses();
-            IList<string> emails = profiles.GetEmails();
+            IList<string> bodytext = profiles.GetBodyText();
             IList<string> instagrams = profiles.GetInstagrams();
 
             Console.WriteLine();
@@ -73,7 +73,7 @@ namespace Kraken_Bot
             string nameText = "Morgan";
             string addressText;
             string sizeText;
-            string instagramText = "@morganskilly";
+            string instagramText;
             string phoneText;
             string discordEmailWebhook = "https://discordapp.com/api/webhooks/680979941990465549/zJTyiSxLIjnaJ4NSWXqraRZvqxFTv7ct1KILefLU3bFkkl-zTVQrjmiweLbjIo__Z5Ds";
 
@@ -82,7 +82,9 @@ namespace Kraken_Bot
             Console.WriteLine("TASKS STARTED");
             Console.WriteLine();
 
+            int instagramcount = 0;
             int addresscount = 0;
+            int bodytextcount = 0;
 
             for (int i = 0; i <= count; i++)
             {
@@ -94,11 +96,27 @@ namespace Kraken_Bot
                     addresscount = 0;
                 }
 
+                instagramText = instagrams[instagramcount];
+                instagramcount++;
+
+                if (instagramcount >= instagrams.Count)
+                {
+                    instagramcount = 0;
+                }
+
+                bodyText = bodytext[bodytextcount];
+                bodytextcount++;
+
+                if (bodytextcount >= bodytext.Count)
+                {
+                    bodytextcount = 0;
+                }
+
                 Random generator = new Random();
                 int r = generator.Next(100000, 1000000);
                 phoneText = "07454" + r.ToString();
 
-                r = generator.Next(4, 8);
+                r = generator.Next(7, 11);
                 sizeText = r.ToString();
 
                 if (generator.Next(100) < 50)
