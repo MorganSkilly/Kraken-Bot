@@ -27,7 +27,6 @@ namespace Kraken_Bot
             delaytext.Text = ConfigurationManager.AppSettings.Get("Delay");
             counttext.Text = ConfigurationManager.AppSettings.Get("Count");
             sendtotext.Text = ConfigurationManager.AppSettings.Get("SendEmail");
-            bodytexttext.Text = File.ReadAllText("body.txt");
             profilestext.Text = File.ReadAllText("profiles.json");
         }
 
