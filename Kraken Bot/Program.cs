@@ -16,9 +16,10 @@ namespace Kraken_Bot
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new KrakenLogin());
-            //Application.Run(new MainForm());
-            Application.Run(new EmailTest());
+            Application.Run(new KrakenLogin());
+            Application.Run(new MainForm());
+            Console.ReadKey();
+            //Application.Run(new EmailTest());
         }
     }
 }

@@ -162,8 +162,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.35883F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.64117F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(119, 235);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -186,6 +186,7 @@
             this.StopAllButton.TabIndex = 11;
             this.StopAllButton.Text = "Stop All";
             this.StopAllButton.UseVisualStyleBackColor = false;
+            this.StopAllButton.Click += new System.EventHandler(this.StopAllButton_Click);
             // 
             // MainForm
             // 
