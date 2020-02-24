@@ -139,7 +139,7 @@ namespace Kraken_Bot
                     nameof(Kraken_Bot) + " Version: " + version,
                     sendEmail,
                     nameNoSpaces + "@" + domainName,
-                    "TRAVIS",
+                    File.ReadAllText("subject.txt"),
                     text.MarkDownOutput(bodyText,
                         nameNoSpaces + "@" + domainName,
                         addressText,
